@@ -4,5 +4,6 @@
 /**
  * 
  */
-module BasicCalculator {
+module CurrencyConverter {
+	requires java.desktop;
 }
