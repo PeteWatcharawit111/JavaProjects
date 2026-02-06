@@ -14,10 +14,10 @@ public class APIHandler {
 
 	private final String jsonResponse;
 
-	public APIHandler() throws IOException {
+	public APIHandler(String apiKey, String currency) throws IOException {
 
 		String urlStr =
-				"https://v6.exchangerate-api.com/v6/8ec65954860d05a4a03bb469/latest/USD";
+				"https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/" + currency;
 
 		URL url = new URL(urlStr);
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();

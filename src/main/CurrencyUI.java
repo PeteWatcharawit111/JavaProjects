@@ -92,11 +92,4 @@ public class CurrencyUI extends JFrame {
 
         return panel;
     }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new CurrencyUI("PHP", "USD", 1000, 17).setVisible(true);
-        });
-        
-    }
 }
